@@ -10,11 +10,28 @@
     <link rel="icon" href="img/icon-logo.svg"  >
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <script>
+
+
+        
+        
+        function myFunc(e) {
+            var menubtn = document.getElementById("scroll");
+       
+            e.name = e.name === 'menu' ? 'close' : 'menu';
+    
+            menubtn.classList.toggle("top-0")
+    
+        }
+    
+    
+    
+    </script>
 
 </head>
 
 <body>
-    <header class="fixed right-0 left-0 ">
+    <header class="sticky top-0  ">
         <nav class="container   justify-between inline-flex md:justify-center md:items-center mx-auto ">
             <div class="mr-4  md:ml-14 md:pl-14 ml-8">
 
@@ -57,7 +74,7 @@
             </div>
 
         </nav>
-        <div class="absolute text-slate-200 bg-black  w-full  duration-1000 pb-14 top-[-120vh] md:hidden" id="scroll">
+        <div class="absolute text-slate-200 bg-black  w-full  z-20  duration-1000 pb-14 scrolling  md:hidden" id="scroll" >
 
             <ul class="text-3xl font-medium ">
                 <li class="ml-12 mt-10"><a href="#">Store</a></li>
@@ -73,7 +90,7 @@
             </ul>
         </div>
     </header>
-    <div class="w-full  h-auto md:h-10 bg-slate-100 flex justify-center items-center">
+    <div class="w-full  h-auto md:h-10 bg-slate-100 flex justify-center items-center ">
         <h3 class="font-thin text-xs sm:text-sm md:text-base text-center w-11/12 ">Get free delivery, Specialist help and 3- or 6-month No
             Cost EMI on selected products.‡
             <a href="" class="text-blue-700 hover:underline-offset-2 hover:underline">Shop now&gt;</a>
@@ -228,7 +245,7 @@
                 <!-- Carousel wrapper -->
                 <div class="overflow-hidden relative h-[50vh] rounded-lg sm:h-[70vh]  lg:h-[90vh] 2xl:h-[100vh]">
                     <!-- Item 1 -->
-                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <span
                             class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800">First
                             Slide</span>
@@ -236,17 +253,17 @@
                             class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2 " alt="...">
                     </div>
                     <!-- Item 2 -->
-                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="img/ad2.png"
                             class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                     </div>
                     <!-- Item 3 -->
-                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="img/ad3.png"
                             class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                     </div>
                     <!-- Item 4 -->
-                    <div class=" duration-700 ease-in-out" data-carousel-item>
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
                         <img src="img/ad4.png"
                             class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
                     </div>
@@ -295,7 +312,7 @@
 
     </section>
 
-    <footer class="bg-slate-50 w-full h-full mt-6">
+    <footer class="bg-slate-50 w-full h-auto mt-6">
         <section class="xl:w-9/12 w-11/12 mx-auto p-6 ">
             <p class="text-xs text-neutral-500">*Instant savings, otherwise referred to as instant Cashback on the Apple
                 Store Online, is available with
@@ -475,20 +492,6 @@
 
 
 </body>
-<script>
-    var menubtn = document.getElementById("scroll");
-    var icons = document.getElementById("icon");
-    const html=document.querySelector("html")
-    function myFunc(e) {
 
-        e.name = e.name === 'menu' ? 'close' : 'menu';
-
-        menubtn.classList.toggle("top-0")
-
-    }
-
-
-
-</script>
 
 </html>
